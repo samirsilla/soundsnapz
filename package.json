@@ -11,8 +11,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5",
-    "sass-loader": "^7.1.0",
-    "webpack": "^3.8.1"
+    "sass-loader": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,5 +19,8 @@
     "test": "react-scripts test --env=jsdom",
     "heroku-postbuild": "yarn run build",
     "scss": "node-sass --watch src/styles/styles.scss src/styles/styles.css"
+  },
+  "devDependencies": {
+    "webpack": "^3.12.0"
   }
 }
