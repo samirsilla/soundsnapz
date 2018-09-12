@@ -1,0 +1,37 @@
+.header-wrapper {
+  align-items: center;
+  background: $dark-grey;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  .logo {
+    height: 45px;
+  }
+
+  nav {
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  nav li {
+    margin-left: 50px;
+
+    span {
+      background: none;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 20px 25px 14px 25px;
+      text-transform: uppercase;
+    }
+  }
+}

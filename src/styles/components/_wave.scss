@@ -1,0 +1,15 @@
+.wave-wrapper {
+  align-items: center;
+  background: linear-gradient(100deg, #00a2ff, #1d61ff);
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  h1 {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    width: 45%;
+  }
+}

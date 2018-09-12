@@ -1,0 +1,43 @@
+
+
+.contain-pad {
+  padding-left: $l-size;
+  padding-right: $l-size;
+}
+
+.contain-margin {
+  margin-left: $l-size;
+  margin-right: $l-size;
+}
+
+.cta-btn {
+  background: linear-gradient(45deg,#02a3ff, #1d61ff);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 20px 40px 14px 40px;
+  text-transform: uppercase;
+}
+
+.secondary {
+  @extend .cta-btn;
+  background: #fff;
+  color: #812b2b;
+}
+
+.text-link {
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+body {
+  font-family: $gotham;
+}
+
+h1 {
+  font-size: $font-lg;
+  font-weight: 300;
+}

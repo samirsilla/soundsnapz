@@ -1,0 +1,30 @@
+// Color
+$dark-grey: #14191c;
+
+
+// Space
+$l-size: 120px;
+$m-size: 60px;
+$s-size: 25px;
+
+// Font
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/GothamBook.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/GothamBold.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/GothamLight.woff2');
+  font-weight: 300;
+}
+
+$font-lg: 34px;
+$gotham: 'Gotham', helvetica, sans-serif;

@@ -1,0 +1,28 @@
+.sign-up-wrapper {
+  background: url('../images/sign-up.png');
+  background-size: cover;
+  border-radius: 8px;
+  height: 500px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+
+  .sign-up-content {
+    align-items: flex-start;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    padding: $m-size;
+    width: 35%;
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  h1 {
+    line-height: 1.5;
+    margin-bottom: $s-size;
+  }
+}
