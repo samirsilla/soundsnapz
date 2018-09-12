@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "heroku-postbuild": "yarn run build",
-    "scss": "node-sass --watch src/styles/styles.scss src/styles/styles.css"
+    "scss": "node-sass --watch src/styles/styles.scss src/styles/styles.css",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "webpack": "^3.12.0"
