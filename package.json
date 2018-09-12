@@ -1,6 +1,9 @@
 {
   "name": "soundsnapz",
   "version": "0.1.0",
+  "engines": {
+    "node": "9.6.1"
+  },
   "private": true,
   "dependencies": {
     "node-sass": "^4.9.3",
