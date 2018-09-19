@@ -19,6 +19,9 @@ const Hero = () => (
       <img src={khalid} alt="khalid album cover"/>
       <img src={malone} alt="malone album cover"/>
     </div>
+      <div className="mobile-album contain-pad">
+      <img src={havana} alt="havana album cover"/>
+      </div>
     </div>
     
   </React.Fragment>
