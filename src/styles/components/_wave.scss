@@ -16,11 +16,11 @@
     font-weight: 300;
     line-height: 2;
     text-align: center;
-    width: 78%;
+    // width: 100%;
 
     @media(min-width: $desktop-breakpoint) {
       font-size: 34px;
-      width: 45%;
+      // width: 45%;
     }
   }
 }

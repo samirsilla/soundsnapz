@@ -54,9 +54,14 @@
 
 body {
   font-family: $gotham;
+  // overflow: hidden;
 }
 
 h1 {
   font-size: $font-xl;
   font-weight: 300;
+}
+
+.disable-scroll {
+  overflow: hidden;
 }

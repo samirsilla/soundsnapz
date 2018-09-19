@@ -4,7 +4,7 @@ import React from 'react';
 const SignUp = () => (
   <div className="sign-up-wrapper">
     <div className="sign-up-content">
-      <h1>Listen worry free for <span>3 months</span></h1>
+      <h1>Listen worry free <br/>for <span>3 months</span></h1>
       <a className="cta-btn secondary" href="#">Sign up now</a>
     </div>
   </div>

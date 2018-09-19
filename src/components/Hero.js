@@ -8,7 +8,7 @@ const Hero = () => (
     <div className="hero-wrapper contain-pad">
       <div className="hero-copy-container">
         <h1>
-          Top artists and thousands of songs now on <span>SoundSnapz</span>.
+          Top artists and thousands of <br/>songs now on <span>SoundSnapz</span>.
         </h1>
         <a className="cta-btn" href="#">
           Stream Free Now
