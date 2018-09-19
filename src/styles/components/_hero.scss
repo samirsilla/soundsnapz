@@ -3,12 +3,22 @@
   background: $dark-grey;
   display: flex;
   color: #fff;
-  height: 70vh;
+  height: 100vh;
   justify-content: center;
   position: relative;
+  width: 100vw;
+
+  // @media(min-width: $tablet-breakpoint) {
+  //   display: flex;
+  // }
+  @media(min-width: $desktop-breakpoint) {
+    height: 70vh;
+  }
+
 
   .hero-copy-container {
     align-items: center;
+    // background: lightblue;
     display: flex;
     flex-direction: column;
     margin-bottom: 270px;
@@ -17,20 +27,35 @@
     font-weight: 700;
   }
   h1 {
+    font-size: $font-lg;
     line-height: 1.5;
-    margin-bottom: 35px;
+    margin: 0 20px;
+    margin-bottom: 60px;
     text-align: center;
-    width: 50%;
+    // width: 90%;
+
+    @media(min-width: $desktop-breakpoint) {
+      font-size: $font-xl;
+      margin-bottom: 35px;
+      width: 50%;
+    }
   }
 }
 
 .albums-container {
   position: absolute;
   bottom: -50px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   // background: lightblue;
   width: 100%;
+
+  @media(min-width: $tablet-breakpoint) {
+    display: flex;
+  }
+  @media(min-width: $desktop-breakpoint) {
+    display: flex;
+  }
 
   img {
     border-radius: 7px;

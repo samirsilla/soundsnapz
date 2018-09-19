@@ -4,34 +4,108 @@
   display: flex;
   height: 80px;
   justify-content: space-between;
+  overflow: hidden;
   padding-bottom: 20px;
   padding-top: 20px;
 
   .logo {
-    height: 45px;
+    height: 30px;
+
+    @media(min-width: $tablet-breakpoint) {
+      height: 45px;
+    }
   }
 
-  nav {
+  .menu-icon {
     color: #fff;
-    display: flex;
+    cursor: pointer;
+    height: 20px;
+
+    @media(min-width: $desktop-breakpoint) {
+      display: none;
+    }
+  }
+
+  .close-icon {
+    color: #fff;
+    cursor: pointer;
+    // display: none;
+    height: 22px;
+
+    @media(min-width: $desktop-breakpoint) {
+      display: none;
+    }
+  }
+
+  .full-menu {
+    color: #fff;
+    display: none;
     font-size: 12px;
     font-weight: 700;
     list-style-type: none;
     text-transform: uppercase;
+
+    @media(min-width: $desktop-breakpoint) {
+      display: flex;
+    }
+
+    li {
+      margin-left: 50px;
+  
+      span {
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 20px 25px 14px 25px;
+        text-transform: uppercase;
+      }
+    }
   }
 
-  nav li {
-    margin-left: 50px;
+  
 
-    span {
-      background: none;
-      border: 1px solid #fff;
-      border-radius: 50px;
-      color: #fff;
-      font-size: 12px;
+  
+
+
+}
+
+.mobile-menu-wrapper {
+  align-items: flex-start;
+  background: $dark-grey;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+
+  @media(min-width: $desktop-breakpoint) {
+    display: none;
+  }
+
+
+  .mobile-menu {
+    background: $dark-grey;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 20%;
+    // padding: 0;
+    list-style: none;
+
+    li {
+      cursor: pointer;
+      font-size: $font-md;
       font-weight: 700;
-      padding: 20px 25px 14px 25px;
+      letter-spacing: .1em;
+      margin: 25px 0;
       text-transform: uppercase;
     }
+
+
+    
   }
 }

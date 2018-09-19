@@ -5,7 +5,7 @@ $dark-grey: #14191c;
 // Space
 $l-size: 120px;
 $m-size: 60px;
-$s-size: 25px;
+$s-size: 30px;
 
 // Font
 @font-face {
@@ -26,5 +26,15 @@ $s-size: 25px;
   font-weight: 300;
 }
 
-$font-lg: 34px;
+$font-xl: 34px;
+$font-lg: 19px;
+$font-md: 14px;
+$font-sm: 12px;
+$font-xs: 10px;
+
 $gotham: 'Gotham', helvetica, sans-serif;
+
+// Responsiveness
+
+$desktop-breakpoint: 1024px;
+$tablet-breakpoint: 600px;

@@ -1,13 +1,31 @@
 
 
 .contain-pad {
-  padding-left: $l-size;
-  padding-right: $l-size;
+  padding-left: $s-size;
+  padding-right: $s-size;
+
+  @media(min-width: $tablet-breakpoint) {
+    padding-left: $m-size;
+    padding-right: $m-size;
+  }
+  @media(min-width: $desktop-breakpoint) {
+    padding-left: $l-size;
+    padding-right: $l-size;
+  }
 }
 
 .contain-margin {
-  margin-left: $l-size;
-  margin-right: $l-size;
+  margin-left: $s-size;
+  margin-right: $s-size;
+
+  @media(min-width: $tablet-breakpoint) {
+    margin-left: $m-size;
+    margin-right: $m-size;
+  }
+  @media(min-width: $desktop-breakpoint) {
+    margin-left: $l-size;
+    margin-right: $l-size;
+  }
 }
 
 .cta-btn {
@@ -38,6 +56,6 @@ body {
 }
 
 h1 {
-  font-size: $font-lg;
+  font-size: $font-xl;
   font-weight: 300;
 }
