@@ -6,7 +6,7 @@ import google from '../images/google.png';
 const Footer = () => (
   <div className="footer-wrapper contain-pad">
     <div className="footer-logos">
-      <img src={logo} alt="logo"/>
+      <img className="logo" src={logo} alt="logo"/>
       <div className="footer-stores">
         <img src={apple} alt="apple store"/>
         <img src={google} alt="google store"/>

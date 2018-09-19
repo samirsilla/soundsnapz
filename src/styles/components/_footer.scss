@@ -3,34 +3,74 @@
   background: $dark-grey;
   color: #fff;
   display: flex;
-  height: 500px;
+  height: 400px;
+
+  @media(min-width: $desktop-breakpoint) {
+    height: 500px;
+  }
+
+  .logo {
+    height: 30px;
+
+    @media(min-width: $desktop-breakpoint) {
+      height: 45px;
+    }
+  }
 
   img {
     height: 45px;
   }
 
   .footer-logos {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 200px;
-    width: 40%;
+
+    @media(min-width: $desktop-breakpoint) {
+      align-items: flex-start;
+      font-size: unset;
+      width: 40%;
+    }
+
+    p {
+      font-size: 10px;
+      @media(min-width: $desktop-breakpoint) {
+        font-size: unset;
+
+      }
+    }
   }
 
   .footer-stores {
-    margin: 50px 0px;
+    display: flex;
+    margin: 75px 0px;
+
+    @media(min-width: $desktop-breakpoint) {
+      display: unset;
+      margin: 50px 0px;
+    }
 
     img {
-      margin-right: 20px;
+      margin: 0 10px;
+      
+
+      @media(min-width: $desktop-breakpoint) {
+        margin-right: 20px;
+      }
     }
   }
 
   .links-wrapper {
     align-items: flex-start;
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 60%;
+
+    @media(min-width: $desktop-breakpoint) {
+      display: flex;
+    }
   }
 
   .column li {

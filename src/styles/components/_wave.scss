@@ -2,14 +2,25 @@
   align-items: center;
   background: linear-gradient(100deg, #00a2ff, #1d61ff);
   display: flex;
-  height: 500px;
+  height: 375px;
   justify-content: center;
   margin-bottom: 100px;
 
+  @media(min-width: $desktop-breakpoint) {
+    height: 500px;
+  }
+
   h1 {
     color: #fff;
+    font-size: 19px;
     font-weight: 300;
+    line-height: 2;
     text-align: center;
-    width: 45%;
+    width: 78%;
+
+    @media(min-width: $desktop-breakpoint) {
+      font-size: 34px;
+      width: 45%;
+    }
   }
 }

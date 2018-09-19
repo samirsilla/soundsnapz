@@ -1,20 +1,35 @@
 .sign-up-wrapper {
   background: url('../images/sign-up.png');
   background-size: cover;
-  border-radius: 8px;
-  height: 500px;
-  margin-top: 200px;
+  background-position: -200px 0;
+  height: 375px;
+  margin-top: 100px;
   margin-bottom: 100px;
 
+  @media(min-width: $desktop-breakpoint) {
+    background-position: unset;
+    border-radius: 8px;
+    height: 500px;
+    margin: 200px $l-size;
+    margin-top: 200px;
+  }
+
   .sign-up-content {
-    align-items: flex-start;
+    align-items: center;
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 375px;
     justify-content: center;
-    padding: $m-size;
-    width: 35%;
+    
+    
+
+    @media(min-width: $desktop-breakpoint) {
+      align-items: flex-start;
+      height: 500px;
+      padding: $m-size;
+      width: 35%;
+    }
   }
 
   span {
@@ -22,7 +37,17 @@
   }
 
   h1 {
+    font-size: 19px;
     line-height: 1.5;
-    margin-bottom: $s-size;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 40%;
+
+    @media(min-width: $desktop-breakpoint) {
+      font-size: 34px;
+      margin-bottom: $s-size;
+      text-align: unset;
+      width: unset;
+    }
   }
 }

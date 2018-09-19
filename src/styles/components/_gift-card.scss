@@ -2,21 +2,51 @@
   align-items: center;
   background: #e2f7fa;
   display: flex;
-  height: 500px;
-  justify-content: space-between;
+  flex-direction: column;
+  height: 410px;
+  justify-content: center;
   margin-bottom: 100px;
   padding: 0 75px;
 
+  @media(min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-between;
+    margin-left: $l-size;
+    margin-right: $l-size;
+  }
+
   .gift-card-copy {
-    width: 50%;
+
+    @media(min-width: $desktop-breakpoint) {
+      width: 50%;
+    }
   }
 
   h1 {
+    font-size: 19px;
     line-height: 1.5;
     margin-bottom: 30px;
+    text-align: center;
+    @media(min-width: $desktop-breakpoint) {
+      font-size: 34px;
+      text-align: unset;
+    }
+  }
+
+  a {
+    display: none;
+
+    @media(min-width: $desktop-breakpoint) {
+      display: unset;
+    }
   }
 
   img {
-    height: 200px;
+    height: 150px;
+
+    @media(min-width: $desktop-breakpoint) {
+      height: 200px;
+    }
   }
 }
