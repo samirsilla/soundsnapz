@@ -6,13 +6,22 @@ class Header extends Component {
     isMenuOpen: false
   }
 
+  componentDidMount() {
+    document.body.addEventListener('touchmove', (e) => this.disableScroll);
+  }
+
+  disableScroll = (e) => {
+    e.preventDefault();
+  }
+
   toggleMenu = () => {
     this.setState((prevState, props) => ({
       isMenuOpen: !prevState.isMenuOpen
     }));
 
     this.state.isMenuOpen ? document.body.classList.remove('disable-scroll') : document.body.classList.add('disable-scroll');
-  }
+
+    }
 
   render() {
     return (
