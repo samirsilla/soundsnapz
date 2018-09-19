@@ -34,6 +34,11 @@
     text-align: center;
     // width: 90%;
 
+    @media(min-width: $tablet-breakpoint) {
+      font-size: $font-lg;
+      // margin-bottom: 35px;
+      // width: 50%;
+    }
     @media(min-width: $desktop-breakpoint) {
       font-size: $font-xl;
       margin-bottom: 35px;
@@ -51,7 +56,7 @@
   width: 100%;
 
   @media(min-width: $tablet-breakpoint) {
-    display: flex;
+    display: none;
   }
   @media(min-width: $desktop-breakpoint) {
     display: flex;
@@ -59,7 +64,11 @@
 
   img {
     border-radius: 7px;
-    height: 270px;
+    height: 200px;
+
+    @media(min-width: $tablet-breakpoint) {
+      height: 250px;
+    }
   }
 }
 
@@ -67,13 +76,18 @@
   position: absolute;
   bottom: -50px;
 
-  @media(min-width: $tablet-breakpoint) {
+  @media(min-width: $desktop-breakpoint) {
     display: none;
   }
 
   img {
     height: 250px;
+
+    @media(min-width: $tablet-breakpoint) {
+      height: 300px;
+    }
   }
+
 
 
 }

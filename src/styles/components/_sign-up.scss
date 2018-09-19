@@ -6,6 +6,12 @@
   margin-top: 100px;
   margin-bottom: 100px;
 
+  @media(min-width: $tablet-breakpoint) {
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+  }
+
   @media(min-width: $desktop-breakpoint) {
     background-position: unset;
     border-radius: 8px;
