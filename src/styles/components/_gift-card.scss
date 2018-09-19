@@ -10,7 +10,7 @@
 
   @media(min-width: $desktop-breakpoint) {
     flex-direction: row;
-    height: 500px;
+    height: 400px;
     justify-content: space-between;
     margin-left: $l-size;
     margin-right: $l-size;
@@ -19,7 +19,7 @@
   .gift-card-copy {
 
     @media(min-width: $desktop-breakpoint) {
-      width: 50%;
+      width: 70%;
     }
   }
 
@@ -29,7 +29,7 @@
     margin-bottom: 30px;
     text-align: center;
     @media(min-width: $desktop-breakpoint) {
-      font-size: 34px;
+      font-size: 28px;
       text-align: unset;
     }
   }
@@ -44,9 +44,5 @@
 
   img {
     height: 150px;
-
-    @media(min-width: $desktop-breakpoint) {
-      height: 200px;
-    }
   }
 }
